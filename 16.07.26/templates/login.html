@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    {% if mensagem %}
+        <p style="color:red;">{{ mensagem }}</p>
+    {% endif %}
+
+    <form method="POST">
+
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha" required><br><br>
+
+        <button type="submit">Entrar</button>
+
+    </form>
+
+</body>
+</html>
